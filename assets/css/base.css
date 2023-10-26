@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100;0,9..40,200;0,9..40,300;0,9..40,400;0,9..40,500;0,9..40,600;0,9..40,700;0,9..40,800;0,9..40,900;0,9..40,1000;1,9..40,100;1,9..40,200;1,9..40,300;1,9..40,400;1,9..40,500;1,9..40,600;1,9..40,700;1,9..40,800;1,9..40,900;1,9..40,1000&display=swap');
+
+:root {
+    --color-highlight : #F7D9C4;
+    --color-text : #777777;
+    --color-main : #232323;
+    --bg-1 : #EFEFEF;
+    --bg-2 : #DCE8EB;
+    --bg-3 : #1B2026;
+
+    --color-green : #13A05D;
+
+    --font: 'DM Sans', sans-serif;
+
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font);
+}
+
+.container {
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+@media (max-width: 1199.98px) {
+    .container {
+        max-width: 960px;
+    }
+    
+}
+
+@media (max-width: 991.98px) {
+    .container {
+        max-width: 720px;
+    }
+    
+}
+
+@media (max-width: 767.98px) {
+    .container {
+        max-width: 540px;
+    }
+}
+
+@media (max-width: 576.98px) {
+    .container {
+        max-width: 100%;
+        padding: 0 15px;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* --button-- */
+.button {
+    font-size: 18px;
+    font-weight: 600;
+    color: var(--color-main);
+    background: var(--color-highlight);
+    display: inline-block;
+    padding: 20px 35px;
+    border-radius: 6px;
+    margin-right: 15px;
+    border: 2px solid #FFF;
+    transition: all 0.4s;
+
+}
+
+.button-highlight {
+    background: var(--color-highlight);
+    border-color: var(--color-highlight);  
+}
+
+.button-highlight:hover {
+    background: #FFF;
+    border-color: var(--color-highlight);
+}
+
+.button-outline-highlight {
+    background: transparent;
+    color: #FFF;
+    border-color: #CCCCCC;
+}
+
+
+.button-outline-highlight:hover {
+    color: var(--color-main);
+    background: var(--color-highlight);
+}
+
+
+.button-black {
+    background: #000;
+    color: #FFF;
+    border-color: var(--color-text);
+}
